@@ -14,7 +14,7 @@ export const fetchData = async (city) => {
 
 export const getWeatherDataForLocation = async (lan, lat) => {
   try {
-    const response = await fetch(`${url}&q=${lan},${lat}&aqi=yes`);
+    const response = await fetch(`${url}&q=${lan},${lat}`);
     const data = await response.json();
 
     return data;
